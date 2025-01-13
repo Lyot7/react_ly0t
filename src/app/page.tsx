@@ -1,7 +1,10 @@
+import { Header, Veille } from "@/libs";
+
 export default function Home() {
   return (
-    <div className="bg-background text-foreground">
-      <h1 className="text-4xl font-bold">Hello, world!</h1>
+    <div className="container mx-auto">
+      <Header />
+      <Veille />
     </div>
   );
 }
