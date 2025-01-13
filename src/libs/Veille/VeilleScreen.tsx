@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 
 const Veille: React.FC = () => {
-  const getData = async () => {
+  const getNotionDB = async () => {
     try {
-      const response = await fetch("/api/notion");
+      const response = await fetch("/api/getNotionDB");
       const data = await response.json();
       console.log(data);
     } catch (error) {
@@ -13,7 +13,7 @@ const Veille: React.FC = () => {
   };
 
   useEffect(() => {
-    getData();
+    getNotionDB();
   }, []);
 
   return (
