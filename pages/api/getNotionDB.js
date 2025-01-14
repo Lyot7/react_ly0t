@@ -1,5 +1,4 @@
-// filepath: /c:/react_ly0t/pages/api/getNotionDB.js
-import notion from "../../src/libs/notion";
+import notion from "./notion";
 
 export default async function handler(req, res) {
   try {
